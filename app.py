@@ -10,7 +10,7 @@ driver = 'ODBC+Driver+17+for+SQL+Server'
 connection_url = f'mssql+pyodbc://{server_name}/{database}?driver={driver}&Trusted_Connection=yes;'
 engine = create_engine(connection_url)
 
-excel_file = r'C:\Users\doga1\OneDrive\Escritorio\flask\flask_3\datos_excel\contactos.xlsx'
+excel_file = r'contactos.xlsx'
 
 # Lee todas las hojas del archivo Excel en un solo DataFrame
 dfs = pd.read_excel(excel_file, sheet_name=None)
